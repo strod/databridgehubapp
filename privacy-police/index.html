@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Data Bridge Hub App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!--
+
+TemplateMo 570 Data Bridge Hub App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/templatemo-dbh-app-dev.css">
+    <link rel="stylesheet" href="/assets/css/animated.css">
+    <link rel="stylesheet" href="/assets/css/owl.css">
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="/assets/images/datahub_icon-wbg.png" alt="DataHub App Dev" style="max-height:60px;"/>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Pricing</a></li>
+              <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+    <div id="modal" class="popupContainer" style="display:none;">
+        <div class="popupHeader">
+            <span class="header_title">Login</span>
+            <span class="modal_close"><i class="fa fa-times"></i></span>
+        </div>
+
+        <section class="popupBody">
+            <!-- Social Login -->
+            <div class="social_login">
+                <div class="">
+                    <a href="#" class="social_box fb">
+                        <span class="icon"><i class="fab fa-facebook"></i></span>
+                        <span class="icon_title">Connect with Facebook</span>
+
+                    </a>
+
+                    <a href="#" class="social_box google">
+                        <span class="icon"><i class="fab fa-google-plus"></i></span>
+                        <span class="icon_title">Connect with Google</span>
+                    </a>
+                </div>
+
+                <div class="centeredText">
+                    <span>Or use your Email address</span>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                    <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+                </div>
+            </div>
+
+            <!-- Username & Password Login form -->
+            <div class="user_login">
+                <form>
+                    <label>Email / Username</label>
+                    <input type="text" />
+                    <br />
+
+                    <label>Password</label>
+                    <input type="password" />
+                    <br />
+
+                    <div class="checkbox">
+                        <input id="remember" type="checkbox" />
+                        <label for="remember">Remember me on this computer</label>
+                    </div>
+
+                    <div class="action_btns">
+                        <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                        <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                    </div>
+                </form>
+
+                <a href="#" class="forgot_password">Forgot password?</a>
+            </div>
+
+            <!-- Register Form -->
+            <div class="user_register">
+                <form>
+                    <label>Full Name</label>
+                    <input type="text" />
+                    <br />
+
+                    <label>Email Address</label>
+                    <input type="email" />
+                    <br />
+
+                    <label>Password</label>
+                    <input type="password" />
+                    <br />
+
+                    <div class="checkbox">
+                        <input id="send_updates" type="checkbox" />
+                        <label for="send_updates">Send me occasional email updates</label>
+                    </div>
+
+                    <div class="action_btns">
+                        <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                        <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-12 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Data Bridge Hub - Privacy Policy</h2>
+                    <h5 class="wp-block-heading">Updated 06 Aug 2023</h5>
+                    <br>
+                    <h3 class="wp-block-heading"></h3>
+                    <h3 class="wp-block-heading">1. Controller</h3>
+                    <p>Data Bridge Hub Group<br>Rua Piracuama 404<br>São Paulo, Brazil<br><a href="mailto:contact@rodtex.dev" style="color: aliceblue;">contact@rodtex.dev</a></p>
+                    <p>Contact Details in Data Protection Matters:&nbsp;<a href="mailto:contact@rodtex.dev" style="color: aliceblue;">privacy@rodtex.dev</a></p>
+                    <p>This Privacy Policy informs you how Data Bridge Hub Group as a data controller process your personal data. This Privacy Policy concerns Data Bridge Hub websites and our all products and services, which collect personal data, or which are linked to this Privacy Policy. We have a shared customer, marketing,  and stakeholders register, and our group companies act as joint controllers for that register.</p>
+                    <h3 class="wp-block-heading">2. Name of register</h3>
+                    <p>Customer, Marketing and Stakeholders Register</p>
+                    <h3 class="wp-block-heading">3. What data do we process and what is the purpose and the legal basis of processing the personal data?</h3>
+                    <p>Data subjects are the customers, potential customers and stakeholders of Data Bridge Hub Group.</p>
+                    <!-- <figure class="wp-block-table"> -->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>PERSONAL DATA</td>
+                                <td>PURPOSE OF PROCESSING</td>
+                                <td>LEGAL BASIS</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="7">
+                                    <strong><em>Basic information&nbsp;</em>
+                                    </strong><em>such as name, customer number, username and/or other identifier, preferred language</em>
+                                    <strong><em>Contact information&nbsp;</em></strong><em>such as e-mail address, phone number, address information</em>
+                                    <strong><em>Information related to the company’s contact persons</em></strong>
+                                </td>
+                                <td>Delivering and improving our products and services according to your needs</td>
+                                <td rowspan="2">Legitimate interest</td>
+                            </tr>
+                            <tr>
+                                <td>Customer surveys</td>
+                            </tr>
+                            <tr>
+                                <td>Fulfilling our contractual and other promises and obligations</td>
+                                <td rowspan="3">Performance of a contract</td>
+                            </tr>
+                            <tr>
+                                <td>Purchasing and ordering necessary services and products from our suppliers to maintain our business</td>
+                            </tr>
+                            <tr>
+                                <td>Invoicing</td>
+                            </tr>
+                            <tr>
+                                <td>Marketing our services to relevant companies</td>
+                                <td>Legitimate interest</td>
+                            </tr>
+                            <tr>
+                                <td>Bookkeeping</td>
+                                <td>Legal obligation</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Recording sales calls for employee training purposes and for improving our sales processes</td>
+                                <td>Consent. We will notify you and obtain your consent before the call is recorded where required by applicable law</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong><em>Possible direct marketing opt-outs</em></strong>
+                                </td>
+                                <td>Serving customers interest of not receiving direct marketing</td>
+                                <td>Legitimate interest in being able to fulfil our legal obligation to ensure opt-out from direct marketing in accordance with the law</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">
+                                    <strong><em>Information you provide in connection with the events we host,&nbsp;</em></strong>
+                                    <em>registration data, special diets, invoicing data</em>
+                                </td>
+                                <td rowspan="2">Organizing events</td>
+                                <td>Legitimate interest in being able to host events and invoice when applicable</td>
+                            </tr>
+                            <tr>
+                                <td>Consent regarding health data (e.g. allergies)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">
+                                    <strong><em>Information of the customer relationship and the contract&nbsp;</em></strong>
+                                    <em>such as information of past and current contracts and orders, correspondence with you and other communication, payment information and other information which you have voluntarily provided to our systems</em>
+                                </td>
+                                <td>Compliance with our contractual and other promises and obligations</td>
+                                <td rowspan="2">Performance of a contract</td>
+                            </tr>
+                            <tr>
+                                <td>Invoicing</td>
+                            </tr>
+                            <tr>
+                                <td>Managing the customer relationship</td>
+                                <td>Legitimate interest in managing and developing the customer relationship</td>
+                            </tr>
+                            <tr>
+                                <td>Bookkeeping</td>
+                                <td>Legal obligation</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">
+                                    <strong><em>Data of the connection and terminal device you are using&nbsp;</em></strong>
+                                    <em>such as the IP address, device ID or other device identifier and cookies</em>
+                                </td>
+                                <td>Developing our services</td>
+                                <td rowspan="3">Consent</td>
+                            </tr>
+                            <tr>
+                                <td>Targeting advertising in our online services</td>
+                            </tr>
+                            <tr>
+                                <td>Analyzing and profiling behavior</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br><br>        
+                    <h3 class="wp-block-heading">4. From where do we receive data?</h3>
+                    <p>We receive information primarily from following sources: yourself, population register, authorities, credit information companies, contact information service providers and other similar reliable sources. We also collect information when our services or websites are used. More information on how we use cookies can be found in the Section 7 below.</p>
+                    <p>For the purposes described in this Privacy Policy, personal data may also be collected and updated from publicly available sources and based on information received from authorities or other third parties within the limits of the applicable laws and regulations.</p>
+                    <h3 class="wp-block-heading">5. To whom do we disclose data, and do we transfer data outside of EU or EEA?</h3>
+                    <p>We may disclose data from this customer, supplier and marketing register to our co-operation partners who do marketing and arrange campaigns and events with and on behalf of us, and who consider themselves as controllers instead of processors working on our behalf (these parties are i.a. social media operators and advertisement networks). Otherwise we do not disclose data from the register to external parties unless required by the legislation or an order by the authorities.</p>
+                    <p>We utilize subcontractors that process personal data on behalf of and for us. We have outsourced our IT management and the maintenance of our customer and marketing systems to outside service providers on whose administrated and protected servers the personal data is stored.</p>
+                    <p>We transfer personal data outside the EU/EEA in connection with the purposes stated in this Privacy Policy. When personal data is processed outside the EU/EEA, we ensure that the personal data is transferred in accordance with the applicable law, for example, by using the EU Commission’s standard contractual clauses or other appropriate safeguards as described in Article 46 of the GDPR.</p>
+                    <h3 class="wp-block-heading">6. How do we protect the data and how long do we store them?</h3>
+                    <p>Only those of our employees, who on behalf of their work are entitled to process customer data, are entitled to use the system containing personal data. Each user has a personal username and password to the system. The data is collected into databases that are protected by firewalls, passwords and other technical measures. The databases and their backup copies are in locked premises and can be accessed only by certain pre-designated persons</p>
+                    <p>We store the data as long as it is necessary for the purpose of processing the data. Personal data in the Customer, Stakeholder and Marketing register is erased after the claim period related to a specific customer, stakeholder or service relationship has elapsed. This period is typically ten (10) years.</p>
+                    <p>We regularly estimate the need for data storage taking into account the applicable legislation. In addition, we take care of such reasonable actions that ensure no incompatible, outdated or inaccurate personal data is stored in the register taking into account the purpose of the processing. We correct or erase such data without delay.</p>
+                    <h3 class="wp-block-heading">7. How do we use cookies on our website?</h3>
+                    <p>Our websites and social media channels use cookies and other similar technologies for managing and developing the website, improving and analyzing user experience and targeting advertisement in our and our partners’ services. Cookies allow us to collect information such as from which website users arrive to the pages, which pages are browsed and when, which browser is used and the IP address of the device.</p>
+                    <p>For more information on how we use cookies, please see our&nbsp;<a href="https://databridgehub.app/cookie-policy" style="color: aliceblue;">Cookie Policy</a>.</p>                
+                    <h3 class="wp-block-heading">8. Changes to this Privacy Policy</h3>
+                    <p>Should we make amendments to this Privacy Policy, we will place the amended notice on our website, with an indication of the amendment date. If the amendments are significant, we may also inform you about this by other means, for example by sending an email or placing a bulletin on our homepage. We recommend that you review this Privacy Policy from time to time to ensure you are aware of any amendments made.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Contact Us</h4>
+            <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
+            <p><a href="#">010-020-0340</a></p>
+            <p><a href="#">info@company.co</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="/terms-of-service/index.html">Terms of Service</a></li>
+              <li><a href="/privacy-police/index.html">Privacy Policy</a></li>
+            </ul>
+            <ul>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Our Company</h4>
+            <div class="logo">
+              <img src="/assets/images/datahub_icon-wbg.png" style="filter: brightness(0) invert(1);" alt="">
+            </div>
+            <p style="text-align: left;">Data Bridge Hub is a alternative data connector solution for individuals and small to medium size companies.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2022 Data Bridge Hub App Dev Company. All Rights Reserved. 
+          <!-- <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/owl-carousel.js"></script>
+  <script src="/assets/js/animation.js"></script>
+  <script src="/assets/js/imagesloaded.js"></script>
+  <script src="/assets/js/popup.js"></script>
+  <script src="/assets/js/custom.js"></script>
+</body>
+</html>

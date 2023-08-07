@@ -89,8 +89,9 @@ html[xmlns] .clearfix {
 
 ul, li {
   padding: 0;
-  margin: 0;
-  list-style: none;
+  margin: 5px;
+  list-style: square;
+  text-align: justify;
 }
 
 header, nav, section, article, aside, footer, hgroup {
@@ -144,6 +145,7 @@ html,
 body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
+  text-align: justify;
 }
 
 ::selection {
@@ -191,9 +193,8 @@ body {
 }
 
 .section-heading img {
-  width: auto; 
-  height: 80vh;
-  object-fit: contain;
+  width: 45px;
+  height: 2px;
 }
 
 .section-heading p {
@@ -282,7 +283,24 @@ body {
   color: #fff !important;
 }
 
+.wp-block-heading{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(44, 44, 44); /* Change the color as desired */
+  margin-bottom: 20px;
+}
 
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid black; /* This sets the border color */
+}
+
+.th td {
+  border: 1px solid black; /* This sets the border color */
+  padding: 8px;
+  text-align: left;
+}
 /* 
 ---------------------------------------------
 header
@@ -367,8 +385,6 @@ header
 
 .background-header .main-nav .logo {
   line-height: 80px;
-  width: auto;
-  max-height: 80%; 
 }
 
 .background-header .main-nav .nav {
@@ -679,9 +695,6 @@ header
   }
   .header-area .main-nav .logo {
     color: #1e1e1e;
-    width: auto;
-    max-width: 80%;
-    height: 80vh;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -701,21 +714,15 @@ header
   }
   .header-area .container {
     padding: 0px;
-    height: 100vh;
   }
   .header-area .logo {
     margin-left: 30px;
-    width: auto;
-    max-width: 80%; /* Set the maximum width to 80% of the parent */
-    height: 80vh;
   }
   .header-area .menu-trigger {
     display: block !important;
   }
   .header-area .main-nav {
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
   }
   .header-area .main-nav .nav {
     float: none;
@@ -958,9 +965,7 @@ Banner Style
 }
 
 .main-banner .right-image img {
-  width: auto; 
-  height: 80vh;
-  object-fit: contain;
+  max-width: 710px;
 }
 
 .main-banner .left-content .white-button a {
@@ -1251,7 +1256,7 @@ The Clients
 .the-clients ul.nacc {
   position: relative;
   min-height: 100%;
-  list-style: none;
+  list-style: square;
   margin: 0;
   padding: 0;
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -1261,7 +1266,7 @@ The Clients
   opacity: 0;
   transform: translateX(-50px);
   position: absolute;
-  list-style: none;
+  list-style: square;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -1965,9 +1970,8 @@ responsive
     font-size: 24px;
   }
   .header-area .main-nav .logo h4 img {
-    width: auto; 
-    height: 80vh;
-    object-fit: contain;
+    max-width: 25px;
+    margin-left: 0px;
   }
   .header-area .main-nav .nav li:last-child {
     padding-left: 20px;
@@ -2138,9 +2142,8 @@ responsive
     font-size: 30px;
   }
   .header-area .main-nav .logo h4 img {
-    width: auto; 
-    height: 80vh;
-    object-fit: contain;
+    max-width: 30px;
+    margin-left: 5px;
   }
   .main-banner .info-stat {
     margin-bottom: 15px;
