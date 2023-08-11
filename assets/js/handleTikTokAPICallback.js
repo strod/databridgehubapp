@@ -1,5 +1,7 @@
 // Assuming this function is called when the API callback is received
-function handleAPICallback(responseData) {
+function handleAPICallback() {
+
+    console.log('handleCallbackRequest function called successfully.');
 
     // Extract the parameters from the URL
     const urlParams = new URLSearchParams(window.location.search);
