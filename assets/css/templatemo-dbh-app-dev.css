@@ -290,16 +290,25 @@ body {
   margin-bottom: 20px;
 }
 
-.table {
+table {
   border-collapse: collapse;
   width: 100%;
   border: 2px solid black; /* This sets the border color */
 }
 
-.th td {
+tbody {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black; /* This sets the border color */
+}
+
+th tr td {
   border: 1px solid black; /* This sets the border color */
   padding: 8px;
+  width: 80%;
   text-align: left;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 /* 
 ---------------------------------------------
