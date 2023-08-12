@@ -21,8 +21,6 @@ function handleAPICallback() {
 
     const anchorElement = document.getElementById('api-response-button');
     anchorElement.href = googleScriptUrl;
-
-    anchorElement.href = googleScriptUrl
 }
 
 function handleAuthorization() {
