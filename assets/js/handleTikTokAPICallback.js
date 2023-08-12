@@ -12,19 +12,12 @@ function handleAPICallback() {
     console.log(`code: ${code}\nscopes: ${scopes}`);
 
     // Forward the data to your Google Apps Script Web App
-    const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbw6Qit1FLGQD1mgSH26ppTQb09gzBbR3Wedg6LG0Gol618vftavUbRAaE6rk45q9CjQGw/exec';
-    const payload = {
-        code: code,
-        scopes: scopes,
-        state: state
-    };
+    const googleScriptUrl = `https://script.google.com/macros/s/ \
+    AKfycbw6Qit1FLGQD1mgSH26ppTQb09gzBbR3Wedg6LG0Gol618vftavUbRAaE6rk45q9CjQGw/ \
+    exec?code=${code}&scopes=${scopes}&state=${state}`;
   
     // Use fetch or other appropriate method to send data to the Google Apps Script
     fetch(googleScriptUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(payload)
+      method: 'GET'
     });
 }
