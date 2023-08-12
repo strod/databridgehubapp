@@ -4,7 +4,7 @@ function handleAPICallback() {
     console.log('handleCallbackRequest function called successfully.');
     
     // AppScript ID
-    const appId = 'AKfycbxSXLrvoXJ5fHzOrI0-JKvlu6c78eUJJWGo_s-y0l3YzbBf85XD7itzBQeWT3N-56DVrQ' ;
+    const appId = 'AKfycbyhf-wKXRfHLxfn0IVgSbAn5XWSH4rCKmTT_FHtldnq4efmLuRYXtOoLvQhboNFZ9euhQ' ;
 
     // Extract the parameters from the URL
     const urlParams = new URLSearchParams(window.location.search);
@@ -20,7 +20,7 @@ function handleAPICallback() {
     console.log(googleScriptUrl);
 
     // Use fetch or other appropriate method to send data to the Google Apps Script
-    response = fetch(googleScriptUrl, {
+    fetch(googleScriptUrl, {
       method: 'POST'
     }
     )
