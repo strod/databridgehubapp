@@ -9,6 +9,8 @@ function handleAPICallback() {
     const scopes = urlParams.get('scopes');
     const state = urlParams.get('state');
 
+    console.log(`code: ${code}\nscopes: ${scopes}`);
+
     // Forward the data to your Google Apps Script Web App
     const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbzfwVl3JhLh3XUCOSJGERHubVhSIaW57dO9GclxMR4vHLCm1_cps-rMPuiu65BGbpYK5w/exec';
     const payload = {
