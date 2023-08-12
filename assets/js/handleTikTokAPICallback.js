@@ -12,7 +12,7 @@ function handleAPICallback() {
     console.log(`code: ${code}\nscopes: ${scopes}`);
 
     // Forward the data to your Google Apps Script Web App
-    const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbzfwVl3JhLh3XUCOSJGERHubVhSIaW57dO9GclxMR4vHLCm1_cps-rMPuiu65BGbpYK5w/exec';
+    const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbw6Qit1FLGQD1mgSH26ppTQb09gzBbR3Wedg6LG0Gol618vftavUbRAaE6rk45q9CjQGw/exec';
     const payload = {
         code: code,
         scopes: scopes,
