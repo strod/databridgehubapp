@@ -20,7 +20,19 @@ function handleAPICallback() {
     console.log(googleScriptUrl);
 
     // Use fetch or other appropriate method to send data to the Google Apps Script
-    fetch(googleScriptUrl, {
+    response = fetch(googleScriptUrl, {
       method: 'POST'
+    }
+    )
+    .then(response => response.text())  // Get the response as text
+    .then(responseText => {
+      // Place the response text in the <p> tag with id 'api-response'
+      const apiResponseElement = document.getElementById('api-response');
+      if (apiResponseElement) {
+          apiResponseElement.textContent = responseText;
+      }
+    })
+    .catch(error => {
+        console.error('Error:', error);
     });
 }
