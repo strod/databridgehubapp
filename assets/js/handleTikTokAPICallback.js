@@ -2,6 +2,9 @@
 function handleAPICallback() {
 
     console.log('handleCallbackRequest function called successfully.');
+    
+    // AppScript ID
+    const appId = 'AKfycbw6Qit1FLGQD1mgSH26ppTQb09gzBbR3Wedg6LG0Gol618vftavUbRAaE6rk45q9CjQGw' ;
 
     // Extract the parameters from the URL
     const urlParams = new URLSearchParams(window.location.search);
@@ -12,9 +15,7 @@ function handleAPICallback() {
     console.log(`code: ${code}\nscopes: ${scopes}`);
 
     // Forward the data to your Google Apps Script Web App
-    const googleScriptUrl = `https://script.google.com/macros/s/ \
-    AKfycbw6Qit1FLGQD1mgSH26ppTQb09gzBbR3Wedg6LG0Gol618vftavUbRAaE6rk45q9CjQGw/ \
-    exec?code=${code}&scopes=${scopes}&state=${state}`;
+    const googleScriptUrl = `https://script.google.com/macros/s/${appId}/exec?code=${code}&scopes=${scopes}&state=${state}`;
 
     console.log(googleScriptUrl);
 
