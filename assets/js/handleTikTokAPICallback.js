@@ -21,7 +21,7 @@ function handleAPICallback() {
   
     // Use fetch or other appropriate method to send data to the Google Apps Script
     fetch(googleScriptUrl, {
-      method: 'GET',
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
