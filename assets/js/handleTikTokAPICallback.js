@@ -4,7 +4,7 @@ function handleAPICallback() {
     console.log('handleCallbackRequest function called successfully.');
     
     // AppScript ID
-    const appId = 'AKfycbxgYeqTyro6-93BpXwJf01Sp11V5Gpbf7peGcI31Fg7Zb2dCcXKqQEOvpbNJhN8x60EEg' ;
+    const appId = 'AKfycbyTxl5taLGhJJMYgzeWOvVqaxGEgAfZ9rmrCCIfEA9vJe2wuUTXoQY604bjMITUPxupWg';
 
     // Extract the parameters from the URL
     const urlParams = new URLSearchParams(window.location.search);
